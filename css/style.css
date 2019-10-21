@@ -1,4 +1,4 @@
-/* primary blue #167ac6*/
+/* #ffffff*/
 body{
     background: #eeeeee;
 }
@@ -12,7 +12,34 @@ header nav.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    margin-bottom: 20px;
+}
+
+.alert {
+    background-color: #167ac6;
+    padding: 11px 13px;    
+}
+
+.alert-header{
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.alert-content{
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.learn-more{
+    float: right;
 }
 
 .logo img{
