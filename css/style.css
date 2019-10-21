@@ -2,6 +2,9 @@
 body{
     background: #eeeeee;
 }
+.margin-b-15{
+    margin-bottom:15px;
+}
 main{
     max-width:1024px;
     margin: auto;
@@ -17,7 +20,7 @@ header nav.navbar{
 
 .alert {
     background-color: #167ac6;
-    padding: 11px 13px;    
+    border:2px solid #167ac6; 
 }
 
 .alert-header{
@@ -32,9 +35,10 @@ header nav.navbar{
 
 .alert-content{
     background-color: #ffffff;
-    padding: 10px;
+    padding: 2px 20px;
     display: flex;
     align-items: center;
+    font-size:14px;
     justify-content: space-between;
 }
 
@@ -62,4 +66,84 @@ header nav.navbar{
     background: #f8f8f8;
     border: none;
     margin: 0px;
+}
+.page-content{
+    margin-top: 15px;
+    
+}
+.page-content section{
+    width: 640px;
+    float: left;
+}
+.page-content aside{
+    width: 340px;
+    float: right;
+}
+.card{
+    background: #fff;
+    padding:15px;
+    
+}
+h1.title{
+    font-size: 22px;
+    margin-top: 0px;;
+}
+.channel{
+    display: flex;
+}
+.channel-info{
+    margin-left: 15px;
+}
+.channel-title{
+    font-size: 14px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.channel-stats{
+    display: flex;
+}
+.channel-stats .button{
+    background: red;
+    color: #fff;
+    padding: 0px 8px;
+    height: 24px;
+    line-height: 24px;
+}
+.channel-stats .subscribers{
+    background:rgb(250,250,250);
+    color: rgb(115,115,115);
+    height: 24px;
+    line-height: 24px;
+    padding: 0px 8px;
+}
+.channel{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+.views{
+    display: flex;
+    justify-content: flex-end;
+}
+.nviews{
+    border-bottom:2px solid #167ac6;
+    height: 20px;
+    padding-bottom: 5px;
+    padding-left: 10%;
+    margin-top: -26px;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+.actions ul{
+    list-style: none;
+    display: flex;
+    padding:0px;
+    
+}
+.actions ul li{
+    padding:5px 10px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    cursor:pointer;
 }
