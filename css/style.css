@@ -147,3 +147,31 @@ h1.title{
     color: rgba(0,0,0,0.5);
     cursor:pointer;
 }
+
+aside.card ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.video-element{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.video-display{
+    padding-left: 12px;
+}
+
+.video-display .title{
+    margin: 0px;
+}
+.channel-owner{
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+}
+
+.n-views{
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+}
+
