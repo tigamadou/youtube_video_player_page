@@ -20,12 +20,11 @@ header nav.navbar{
 }
 header nav.navbar .nav-container{
     max-width:964px;
-    margin:auto;
-    
+    margin:auto;    
     display: flex;
     justify-content: space-between;
     align-items: center;
-   // margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 header nav.navbar .nav-container .nav-start,header nav.navbar .nav-container .nav-end{
     display: flex;
@@ -45,7 +44,7 @@ header nav.navbar .nav-container .nav-end .auth-button .button{
     background: #167ac6;
     color: #fff;
     border: none;
-    font-size: 11px;;
+    font-size: 11px;
     height: 28px;
     width: 56px;
     padding: 0px 10px;
@@ -55,7 +54,6 @@ header nav.navbar .nav-container .nav-end .auth-button .button{
     background-color: #167ac6;
     border:2px solid #167ac6; 
 }
-
 .alert-header{
     color: white;
     padding: 10px;
@@ -67,9 +65,6 @@ header nav.navbar .nav-container .nav-end .auth-button .button{
 .alert-header .icon:first-child{
     padding: 0px 13px;
 }
-
-
-
 .alert-content{
     background-color: #ffffff;
     padding: 2px 20px;
@@ -78,16 +73,13 @@ header nav.navbar .nav-container .nav-end .auth-button .button{
     font-size:14px;
     justify-content: space-between;
 }
-
 .learn-more{
     float: right;
 }
-
 .logo img{
     width: 100px;
     height: 30px;
 }
-
 .searchbar{
     display: flex;
     justify-content: space-between;
@@ -133,11 +125,10 @@ header nav.navbar .nav-container .nav-end .auth-button .button{
 .card{
     background: #fff;
     padding:15px;
-    
 }
 h1.title{
     font-size: 22px;
-    margin-top: 0px;;
+    margin-top: 0px;
 }
 .channel{
     display: flex;
@@ -206,12 +197,10 @@ h1.title{
     color: rgba(0,0,0,0.5);
     cursor:pointer;
 }
-
 aside.card ul{
     list-style: none;
     padding: 0px;
 }
-
 .video-element{
     display: flex;
     margin-bottom: 15px;
@@ -220,10 +209,13 @@ aside.card ul{
     border-bottom:1px solid rgb(226,226,226);
     padding-bottom:15px;
 }
+.video-preview{
+    width: 168px;
+    height: 94px;
+}
 .video-display{
     padding-left: 12px;
 }
-
 .video-display .title{
     margin: 0px;
 }
@@ -231,12 +223,10 @@ aside.card ul{
     font-size: 12px;
     color: rgba(0,0,0,0.5);
 }
-
 .n-views{
     font-size: 12px;
     color: rgba(0,0,0,0.5);
 }
-
 .video-description{
     font-size: 13px;
 }
@@ -256,48 +246,39 @@ aside.card ul{
     width: 100%;
     height: 30px;
     background: #fff;
-    cursor:pointer;.aside-option .autoplay {
-    
-    }
+    cursor: pointer;
     margin-bottom:-15px;
-    color:rgb(118, 118, 118);
+    color: rgb(118, 118, 118);
 }
-
 .aside-option{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .aside-option .autoplay{
     color: rgb(118, 118, 118);
     width: 40%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
-
 }
 .aside-option .autoplay input{
     display: none;
 }
 .aside-option .autoplay input+label{
-    position:relative;
-    cursor:pointer;
-    
-    
+    position: relative;
+    cursor: pointer;
 }
 .aside-option .autoplay input:not(:checked)+label:before{
     position:absolute;
     display: block;
     content:"";
-    top:0px;
+    top: 0px;
     right: -60px;
     width:30px;
     height: 15px;
     background: rgb(118,118,118);
     border-radius:10px;
-    z-index: 1;
-    
-    
+    z-index: 1;    
 }
 .aside-option .autoplay input+label:before{
     transition:all 0.2s ease-in-out;
@@ -306,15 +287,13 @@ aside.card ul{
     position:absolute;
     display: block;
     content:"";
-    top:0px;
+    top: 0px;
     right: -60px;
     width:30px;
     height: 15px;
     background: #167ac6;
     border-radius:10px;
-    z-index: 1;
-    
-    
+    z-index: 1;    
 }
 .aside-option .autoplay input:not(:checked)+label:after{
     position:absolute;
@@ -326,9 +305,7 @@ aside.card ul{
     height: 12px;
     border-radius:50%;
     z-index: 2;
-    background: #fff;
-    
-    
+    background: #fff;    
 }
 .aside-option .autoplay input+label:after{
     transition:all 0.2s ease-in-out;
@@ -344,33 +321,27 @@ aside.card ul{
     border-radius:50%;
     z-index: 2;
     background: #fff;
-    
 }
-
-
 footer{
     clear: both;
     margin-top: 30px;
 }
-
 .clear{
     clear: both;
 }
-
 .footer-top{
     display: flex;
     align-items: center;
 }
 .footer-top .select select{
-    background:transparent!important;
-    border-color: transparent!important;
+    background:transparent;
+    border-color: transparent;
     cursor: pointer;
 }
 .buttons{
     display: flex;
     align-items: center;
 }
-
 .buttons div{
     margin: 0px 10px;
     background-color: rgb(248, 248, 248);
@@ -378,22 +349,18 @@ footer{
     border: 1px solid rgb(211, 211, 211);
     font-size: 14px;
 }
-
 .footer-bottom ul{
     list-style: none;
     padding: 0px;
     display: flex;
 }
-
 .footer-bottom ul li{
     padding: 0px 10px;
 }
-
 .footer-bottom ul li a{
     color: black;
     text-decoration: none;
 }
-
 .footer-bottom ul.bottom li a{
     font-size: 12px;
     color: rgb(102, 102, 102);
