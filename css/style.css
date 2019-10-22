@@ -256,7 +256,9 @@ aside.card ul{
     width: 100%;
     height: 30px;
     background: #fff;
-    cursor:pointer;
+    cursor:pointer;.aside-option .autoplay {
+    
+    }
     margin-bottom:-15px;
     color:rgb(118, 118, 118);
 }
@@ -267,9 +269,84 @@ aside.card ul{
     align-items: center;
 }
 
-.aside-option .option:nth-child(2){
+.aside-option .autoplay{
     color: rgb(118, 118, 118);
+    width: 40%;
+    display:flex;
+    justify-content: space-between;
+
 }
+.aside-option .autoplay input{
+    display: none;
+}
+.aside-option .autoplay input+label{
+    position:relative;
+    cursor:pointer;
+    
+    
+}
+.aside-option .autoplay input:not(:checked)+label:before{
+    position:absolute;
+    display: block;
+    content:"";
+    top:0px;
+    right: -60px;
+    width:30px;
+    height: 15px;
+    background: rgb(118,118,118);
+    border-radius:10px;
+    z-index: 1;
+    
+    
+}
+.aside-option .autoplay input+label:before{
+    transition:all 0.2s ease-in-out;
+}
+.aside-option .autoplay input:checked+label:before{
+    position:absolute;
+    display: block;
+    content:"";
+    top:0px;
+    right: -60px;
+    width:30px;
+    height: 15px;
+    background: #167ac6;
+    border-radius:10px;
+    z-index: 1;
+    
+    
+}
+.aside-option .autoplay input:not(:checked)+label:after{
+    position:absolute;
+    display: block;
+    content:"";
+    top:1.5px;
+    right: -44px;
+    width:12px;
+    height: 12px;
+    border-radius:50%;
+    z-index: 2;
+    background: #fff;
+    
+    
+}
+.aside-option .autoplay input+label:after{
+    transition:all 0.2s ease-in-out;
+}
+.aside-option .autoplay input:checked+label:after{
+    position:absolute;
+    display: block;
+    content:"";
+    top:1.5px;
+    right: -58px;
+    width:12px;
+    height: 12px;
+    border-radius:50%;
+    z-index: 2;
+    background: #fff;
+    
+}
+
 
 footer{
     clear: both;
@@ -284,7 +361,11 @@ footer{
     display: flex;
     align-items: center;
 }
-
+.footer-top .select select{
+    background:transparent!important;
+    border-color: transparent!important;
+    cursor: pointer;
+}
 .buttons{
     display: flex;
     align-items: center;
