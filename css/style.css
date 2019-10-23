@@ -18,6 +18,9 @@ header nav.navbar{
     padding: 7px 30px 8px;
     margin-bottom: 15px;
 }
+.navbar img.icon{
+    height: 20px;
+}
 header nav.navbar .nav-container{
     max-width:964px;
     margin:auto;    
