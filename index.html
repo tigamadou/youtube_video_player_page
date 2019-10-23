@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Youtube Video Player Page</title>
+</head>
+<body>
+    <main>
+            <header>
+                    <nav class="navbar">
+                        <div class="nav-container">
+                            <div class="nav-start">
+                                    <div class="menu-button">
+                                            <div class="button">
+                                                <img src="images/menu.png" alt="menu" class="icon">
+                                            </div>
+                                        </div>
+                                        <div class="logo">
+                                            <img src="images/logo.png" alt="">
+                                        </div>
+                            </div>
+                                
+                                    <div class="searchbar">
+                                        <div class="input">
+                                                <input type="text" placeholder="Search" class="input-search">
+                                        </div>
+                                        
+                                        <button class="search">
+                                            <img src="images/search.png" alt="menu" height="16px;">
+                                        </button>
+                                    </div>
+                            <div class="nav-end">
+                                    <div class="upload-button">
+                                            <button class="icon">
+                                                <img src="images/upload-button.png" alt="menu" class="icon">
+                                            </button>
+                                        </div>
+                                        <div class="auth-button">
+                                            <button class="button">Sign In</button>
+                                        </div>
+                            </div>
+                                    
+                        </div>
+                        
+                    </nav>
+            
+                    <div class="alert">
+                        <div class="alert-header">
+                            <div>
+                                <span class="icon"><i class="fa fa-user"></i></span>
+                                <span>Choose your language</span>
+                            </div>
+                            <div>
+                                <span class="icon"><i class="fa fa-close"></i></span>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="alert-content">
+                            <p>
+                                You're viewing Youtube in <strong>English (US)</strong>. You can <a href="#">change this preference below</a>.
+                            </p>
+                            <div class="learn-more">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+            </header>
+
+            <div class="page-content">
+                <section>
+                    <div class="video-container margin-b-15">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/V74l_zS1x8E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="card margin-b-15">
+                        <div>
+                            <h1 class="title">Contributing to Open Source Part I: The Easy Way</h1>
+                        </div>
+                        <div class="channel">
+                            <div>
+                                <img src="images/avatar.jpeg" alt="">
+                            </div>
+                            <div class="channel-info">
+                                <h2 class="channel-title">The Odin Project</h2>
+                                <div class="channel-stats">
+                                    <div class="button"><span class="icon"><i class="fa fa-youtube-play"></i></span><span>Subscribe</span></div>
+                                    <div class="subscribers">799</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="views">
+                            <div class="nviews">50,016 views</div>
+                        </div>
+                        <div class="actions">
+                            <ul>
+                                <li>
+                                    <div class="button">
+                                        <span class="icon"><i class="fa fa-plus"></i></span>
+                                        <span>Add to</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="button">
+                                        <span class="icon"><i class="fa fa-share"></i></span>
+                                        <span>Share</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="button">
+                                        <span class="icon"><i class="fa fa-ellipsis-h"></i></span>
+                                        <span>More</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="button">
+                                        <span class="icon"><i class="fa fa-thumbs-up"></i></span>
+                                        <span>359</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="button">
+                                        <span class="icon"><i class="fa fa-thumbs-down"></i></span>
+                                        <span>14</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card margin-b-15 video-description">
+                        <h5 class="title">Published on Feb 27, 2014</h5>
+                        <p>
+                            How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.
+
+                        </p>
+                        <button class="show-more">
+                            SHOW MORE
+                        </button>
+
+
+                    </div>
+                </section>
+                <aside class="card">
+                    <div class="aside-option">
+                        <div class="option">
+                            <strong>Up Next</strong>
+                        </div>
+
+                        <div class="option autoplay">
+                            <div>
+                                <input id="autoplay" type="checkbox">
+                                <label for="autoplay">Autoplay</label>
+                            <span class="icon"><i class="fa fa-info-circle"></i></span>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>                                 
+                    <ul>
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image1.jpeg" alt="Contributing to Open Source Part II: The Real Way">
+                            
+                            <div class="video-display">
+                                <h4 class="title">Contributing to Open Source Part II: The Real Way</h4>
+                                <span class="channel-owner">The Odin Project</span>
+                                <div class="n-views">29,985 views</div>
+                            </div>
+                        </li>
+
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image2.jpeg" alt="'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' by">
+                            
+                            <div class="video-display">
+                                <h4 class="title">'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' by</h4>
+                                <span class="channel-owner">imtiana</span>
+                                <div class="n-views">981,543 views</div>
+                            </div>
+                        </li>
+
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image3.jpeg" alt="Programming in Visual Basic .Net How to Connect Access Database to">
+                            
+                            <div class="video-display">
+                                <h4 class="title">Programming in Visual Basic .Net How to Connect Access Database to</h4>
+                                <span class="channel-owner">iBassKung</span>
+                                <div class="n-views">16,130,993 views</div>
+                            </div>
+                        </li>
+
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image4.jpeg" alt="REST API concepts and examples">
+                            
+                            <div class="video-display">
+                                <h4 class="title">REST API concepts and examples</h4>
+                                <span class="channel-owner">WebConcepts</span>
+                                <div class="n-views">3,580,484 views</div>
+                            </div>
+                        </li>
+
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image5.jpeg" alt="GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A Case">
+                            
+                            <div class="video-display">
+                                <h4 class="title">GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A Case</h4>
+                                <span class="channel-owner">Valuetainment</span>
+                                <div class="n-views">444,63429,985 views</div>
+                            </div>
+                        </li>
+
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image6.jpeg" alt="How to create a 3D Terrain with Google Maps and height maps in Photoshop">
+                            
+                            <div class="video-display">
+                                <h4 class="title">How to create a 3D Terrain with Google Maps and height maps in Photoshop</h4>
+                                <span class="channel-owner">Orange Box CeO</span>
+                                <div class="n-views">296,987 views</div>
+                            </div>
+                        </li>
+
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image7.jpeg" alt="Convolutional Neural Networks (CNNs) explained">
+                            
+                            <div class="video-display">
+                                <h4 class="title">Convolutional Neural Networks (CNNs) explained</h4>
+                                <span class="channel-owner">deeplizard</span>
+                                <div class="n-views">1,300,985 views</div>
+                            </div>
+                        </li>
+
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image8.jpeg" alt="Top 10 Linux Job Interview Questions">
+                            
+                            <div class="video-display">
+                                <h4 class="title">Top 10 Linux Job Interview Questions</h4>
+                                <span class="channel-owner">tutoriallinux</span>
+                                <div class="n-views">2,169,985 views</div>
+                            </div>
+                        </li>
+
+                        <li class="video-element">
+                            <img class="video-preview" src="images/image9.jpeg" alt="Running an SQL Injection Attack - Computerphile">
+                            
+                            <div class="video-display">
+                                <h4 class="title">Running an SQL Injection Attack - Computerphile</h4>
+                                <span class="channel-owner">Computerphile</span>
+                                <div class="n-views">299,985 views</div>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="clear"></div>
+            <footer class="card">
+                <div class="footer-top">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>footer
+                    <div class="buttons">
+                        <div class="select">
+                            <label for="language">Language</label>
+                            <select name="language" id="language">
+                                <option value="English">English</option>
+                                <option value="French">French</option>
+                            </select>
+                        </div>
+    
+                        <div class="select">
+                            <label for="location">Location</label>
+                            <select name="location" id="location">
+                                <option value="benin">Benin</option>
+                                <option value="burundi">Burundi</option>
+                            </select>
+                        </div>
+    
+                        <div class="select">
+                            <label for="restricted">Restricted Mode</label>
+                            <select name="restricted" id="restricted">
+                                <option value="0">Off</option>
+                                <option value="1">On</option>
+                            </select>
+                        </div>
+    
+                        <div class="button"><span class="icon"><i class="fa fa-hourglass-end"></i></span>
+                            <span>History</span>
+                        </div>
+                        <div class="button"><span class="icon"><i class="fa fa-question"></i></span>
+                            <span>Help</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div>
+                        <ul class="top">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Copyright</a></li>
+                            <li><a href="#">Creators</a></li>
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">Developers</a></li>
+                        </ul>
+
+                        <ul class="bottom">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy & Safety</a></li>
+                            <li><a href="#">Test new features</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+    </main>
+
+</body>
+</html>
